@@ -30,3 +30,18 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scroll')
   }
 })
+
+/* ScrollReveal: show elements when scrolling the page */
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  '#home .image, #home .text, #about .image, #about .text, #seasons .title, #seasons .card, #community .text, #community .image',
+  {
+    interval: 100
+  }
+)

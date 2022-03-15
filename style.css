@@ -370,3 +370,53 @@ nav.show div.icon-close {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
+
+/*==== COMMUNITY =======================*/
+#community {
+  overflow: hidden;
+}
+
+#community .container {
+  margin: 0;
+}
+
+#community .image {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+#community .image::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: var(--base-color);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#community .image img {
+  position: relative;
+  right: 2.93rem;
+}
+
+#community .image img,
+#community .image::before {
+  border-radius: 0.25rem;
+}
+
+#community .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#community .text .title {
+  text-align: left;
+}
+
+#community .text h2 span {
+  color: var(--base-color);
+}
