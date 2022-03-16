@@ -18,10 +18,10 @@ for (const link of links) {
 }
 
 /* change the page header when scroll */
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', function () {
   if (window.scrollY >= navHeight) {
     // scroll higher than header height
     header.classList.add('scroll')
@@ -29,7 +29,7 @@ window.addEventListener('scroll', function () {
     //scroll smaller than header height
     header.classList.remove('scroll')
   }
-})
+}
 
 /* ScrollReveal: show elements when scrolling the page */
 const scrollReveal = ScrollReveal({
@@ -40,8 +40,26 @@ const scrollReveal = ScrollReveal({
 })
 
 scrollReveal.reveal(
-  '#home .image, #home .text, #about .image, #about .text, #seasons .title, #seasons .card, #community .text, #community .image',
+  '#home .image, #home .text, #about .image, #about .text, #seasons .title, #seasons .card, #community .text, #community .image, footer .brand, footer .social',
   {
     interval: 100
   }
 )
+
+/* Button back to top */
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+  window.addEventListener('scroll', function () {
+    if (window.scrollY >= 560) {
+      backToTopButton.classList.add('show')
+    } else {
+      backToTopButton.classList.remove('show')
+    }
+  })
+}
+
+/* When scroll */
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
+})
