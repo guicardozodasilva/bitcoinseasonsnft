@@ -21,11 +21,9 @@
 
 <p align="center">
  <a href="#-about-project">About</a> •
- <a href="#-como-executar-o-projeto">Como executar</a> • 
- <a href="#-tecnologias">Tecnologias</a> • 
- <a href="#-contribuidores">Contribuidores</a> • 
- <a href="#-autor">Autor</a> • 
- <a href="#user-content--licença">Licença</a>
+ <a href="#-how-to-run-the-project">How to run the project</a> • 
+ <a href="#-author">Author</a> • 
+ <a href="#-licence">Licence</a>
 </p>
 
 
